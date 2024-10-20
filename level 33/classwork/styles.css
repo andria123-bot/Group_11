@@ -1,0 +1,9 @@
+.image-container img {
+  width: 500px;
+  height: 600px;
+}
+
+.image-container img.resized {
+  height: 500px;
+  width: 416.67px; 
+}

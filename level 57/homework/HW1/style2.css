@@ -1,0 +1,172 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+body {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(237, 235, 249);
+}
+
+.parent {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 1000px;
+  height: 650px;
+
+  background-color: white;
+  box-shadow: 0 0 15px rgb(207, 198, 198);
+  border-radius: 20px;
+  overflow: hidden;
+  margin-left: 15 ;
+
+}
+
+.image-div {
+  width: 490px;
+  height: 400px;
+  background-image: url(logo.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-left: -250;
+  margin-top: 60;
+}
+
+.form-div {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+
+.form-div h1 {
+  font-size: 1.5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60;
+  color: rgb(68, 58, 92);
+
+  font-style: italic;
+  
+}
+
+.form-div form {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 0 10px;
+}
+
+.navigation {
+  width: 45%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.navigation a {
+  text-decoration: none;
+}
+
+.navigation a:hover {
+  color: #000;
+}
+
+.navigation button {
+  cursor: pointer;
+  margin-right: 46;
+  background-color: rgb(95, 25, 245);
+  color: white;
+  border-radius: 20px;
+  padding: 12;
+  font-weight: bold;
+  border: solid wheat
+}
+
+.navigation button:hover{
+  background-color: white;
+  color: rgb(95, 25, 245);
+  border: solid wheat;
+  transition: background 0.4s;
+}
+
+
+.main {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 200px;
+  gap: 340px;
+}
+
+.info {
+  width: 310px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.info h1 {
+  font-family: 'Lucida Sans', 
+  'Lucida Sans Regular', 
+  'Lucida Grande', 
+  'Lucida Sans Unicode', Geneva,
+   Verdana, sans-serif;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-right: 200 ;
+  font-size: 40px;
+  margin-left: 65;
+  color: rgb(68, 58, 92);
+}
+
+.info p {
+  font-family: 'Lucida Sans';
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  font-size: 10px;
+  
+
+}
+
+.info button {
+  width: 199;
+  background-color: rgb(95, 25, 245);
+  font-family: 'Lucida Sans';
+  padding: 15px;
+  border-radius: 25px;
+  cursor: pointer;
+  text-decoration: none;
+  border: solid wheat;
+  margin-right: 10;
+  
+  font-weight: bold;
+  font-size: 16px;
+  color: white;
+  display: inline-block
+
+  
+}
+
+.info button:hover {
+  background-color: white;
+  color: rgb(95, 25, 245);
+  transition: background 0.4s;
+  border: solid wheat ;
+}

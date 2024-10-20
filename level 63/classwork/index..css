@@ -1,0 +1,52 @@
+body{
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 10px 20px;
+    box-shadow: 0 2px 4px;
+}
+
+.logo span{
+    font-size: 24px;
+    font-weight: bold;
+    color: #aaaa;
+}
+
+.nav-links{
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li{
+    margin: 0 15px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #aaa;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.bnt-create-account{
+    background-color: #9333EA;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 15px;
+    transition: 0.5s;
+}
+
+.bnt-create-account:hover{
+    background-color: #7002d8;
+}

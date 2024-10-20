@@ -1,0 +1,71 @@
+.Middle_part{
+    text-align: center;
+}
+
+.right{
+    margin-left: 850px;
+    border: none; 
+    border-radius: 5px;
+}
+
+.qvemot{
+    text-align: center;
+}
+
+.AOF{
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 50px;
+    margin-top: 70px;
+}
+
+.DT{
+    margin-right: 530px;
+}
+
+.PhoLeft{
+    margin-right: 35px;
+}
+
+.PhoRight{
+    margin-left: 35px;
+}
+
+.QWF{
+    margin-right: 785px ;
+}
+
+.leftS{
+    margin-left:255px ;
+}
+
+.BLS{
+    margin-right: 890px; 
+    height: 35px; 
+    border-radius: 5px;
+    border: none;
+}
+
+.RSA{
+    text-align: right;
+}
+
+.RSA{
+    margin-right: 270px;
+    margin-top: -180px;
+}
+
+.LST{
+    margin-left: 395px;
+}
+
+.BRS{
+    margin-left: 140px; 
+    height: 35px; 
+    border-radius: 5px;
+    border: none;
+}
+
+button:hover{
+    background-color:red;
+}

@@ -1,0 +1,202 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+body{
+  background-color: rgb(16, 0, 41);
+}
+
+ul, li{
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  padding: -20px;
+  color: white;
+  text-decoration: none;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  position: relative;
+  top: 10px;
+
+}
+
+.log-in{
+  color: gray;
+  text-decoration: none;
+  background: none;
+  border: 0px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
+  position: relative;
+  top: 10px;
+  left: 24px;
+}
+
+.sign-up{
+  color: white;
+  text-decoration: none;
+  background-color: rgb(1, 181, 254);
+  border: 0px;
+  border-radius: 10px;
+  background-size: 10px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
+  padding: 10px;
+  box-shadow: 2px 2px 4px rgb(1, 181, 254);
+  position: relative;
+  top: 10px;
+}
+
+.para{
+  position: relative;
+  top: 2px;
+  display: block;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
+}
+
+.size-6{
+  position: relative;
+  right: 100px;
+  bottom: -10px;
+  width: 30px;
+}
+
+.multicolortext{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  color: white;
+  top: 200px;
+  font-size: 60px;
+  font-weight: bold;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-image: linear-gradient(180deg, white, rgba(214, 93, 236, 0.884));
+  background-clip: text;
+  color: transparent;
+}
+
+form{
+  border: 10px solid rgba(98, 82, 133, 0.4);
+  border-radius: 10px;
+  position: absolute;
+  top: 500px;
+  left: 530px;
+  font-size: 0.1px;
+  width: 512px;
+}
+
+.btn-1{
+  position: absolute;
+  left: 910px;
+  top: 520px;
+  color: white;
+  background: linear-gradient(45deg, cyan, purple);
+  border: none;
+  border-radius: 10px;
+  padding: 10px;
+  padding-left: 29px;
+  font-weight: bold;
+}
+
+#text-1{
+
+  position: relative;
+  left: -2px;
+  top: -0.1px;
+  width: 499px;
+  padding: 20px;
+  padding-left: 60px;
+  border-radius: 10px;
+  border: none;
+  text-decoration: none;
+  outline: none;
+  font-size: 15px;
+
+}
+
+.watch-the-video{
+  position: absolute;
+  background: none;
+  color: white;
+  border: none;
+  top: 600px;
+  right: 680px;
+  font-weight: bold;
+  
+}
+
+.size-7{
+  height: 40px;
+  color: white;
+  position: relative;
+  top: 312px;
+  left: 700px;
+  background-color: rgba(104, 92, 166, 0.532);
+  border-radius: 20px;
+  
+  padding: 4px;
+}
+
+button{
+  cursor: pointer;
+}
+
+li{
+  cursor: pointer;
+}
+
+.size-0{
+  position: absolute;
+  height: 19px;
+  bottom: 10px;
+  left: 7.5px;
+}
+
+.size-2{
+  position: absolute;
+  bottom: 14px;
+  left: 10px;
+  height: 32px;
+  padding: 4px;
+  color: rgb(230, 39, 198);
+  background-color: rgb(219, 222, 238);
+  border-radius: 6px;
+
+}
+
+.bottom-text{
+  position: absolute;
+  top: 770px;
+  left: 700px;
+  color: rgb(158, 158, 158);
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 
+    'Lucida Sans', Arial, sans-serif;
+  font-weight: bold;
+
+}
+
+.size-8{
+  position: absolute;
+  color: rgb(167, 163, 163);
+  height: 16px;
+  bottom: 0.5px;
+  left: 160px;
+}
+
+.blocks{
+  position: absolute;
+  height: 250px;
+  width: 750px;
+  left: 412px;
+  bottom: 20px;
+  border-radius: 100%;
+  background: linear-gradient(45deg, cyan, purple);
+  z-index: -1;
+}
+

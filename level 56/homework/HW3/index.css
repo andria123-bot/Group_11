@@ -1,0 +1,33 @@
+body{
+    background-color: #242329;
+}
+
+.Gray{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.child{
+    width: 620px;
+    height: 670px;
+    border-radius: 25px;
+
+    background-image: url(Capture.PNG);
+
+    box-shadow: 5px 5px 30px rgb(255, 255, 255);
+}
+
+.AP{
+    text-align: center;
+    color: #B06CB0 ;
+}
+
+.BN{
+    text-align: center;
+    color: white;
+}
+
+.PARA{
+    color: #ACABAE;
+}

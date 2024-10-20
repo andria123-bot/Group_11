@@ -1,0 +1,10 @@
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+#password-warning {
+  color: red;
+  font-size: 14px;
+  visibility: hidden;
+}

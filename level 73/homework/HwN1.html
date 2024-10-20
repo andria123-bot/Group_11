@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>title</title>
+  <style>
+    #N1 {
+        color: green;
+        font-size: 20px;
+    }
+    #N2 {
+        color: orange;
+        font-size: 22px;
+    }
+    #N3 {
+        color: purple;
+        font-size: 24px;
+    }
+</style>
+</head>
+<body>
+  <p id="N1">P1</p>
+  <p id="N2">P2</p>
+  <p id="N3">P3</p>
+  <script>
+    var p1 = document.getElementById('N1');
+    p1.textContent = 'Blue';
+    p1.style.color = 'blue';
+
+    var p2 = document.getElementById('N2');
+    p2.textContent = 'Green';
+    p2.style.color = 'green';
+
+    var p3 = document.getElementById('N3');
+    p3.textContent = 'Red';
+    p3.style.color = 'red';
+</script>
+</body>
+</html>

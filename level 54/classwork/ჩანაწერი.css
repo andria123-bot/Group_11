@@ -1,0 +1,43 @@
+#Parent{
+    border: 5px solid blue;
+}
+
+#Child{
+    width: 300px;
+    height: 100px;
+    padding: 10px 20px 5px 15px;
+    margin: 40px;
+    border: 5px dashed green;
+
+    background-color: yellow;
+}
+
+button{
+    background-color: blue;
+}
+
+button:hover{
+    text-decoration: none;
+    background-color: red;
+}
+
+button:active{
+    background-color: rgb(0, 255, 0);
+}
+
+p{
+    width: 400px;
+    height: 200px;
+
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 15px;
+    padding-right: 15px;
+
+    background-color: yellow;
+
+    border:5px solid red;
+
+}
+
+

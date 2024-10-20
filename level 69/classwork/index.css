@@ -1,0 +1,49 @@
+.child{
+    width: 400px;
+    height: 400px;
+    background-color: green;
+    border: 2px solid blue;
+
+    animation-name: colorchange;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    border-radius: 15px;
+}
+
+@keyframes colorchange{
+    0%{
+        background-color: green;
+        border: 2px solid rgb(217, 255, 0);
+    }
+    20%{
+        background-color: rgb(255, 0, 0);
+        border: 2px solid rgb(132, 0, 255);
+        width: 300px;
+        height: 200px;
+    }
+    40%{
+        background-color: rgb(0, 255, 0);
+        border: 2px solid rgb(255, 0, 0);
+        width: 300px;
+        height: 200px;
+    }
+    60%{
+        background-color: rgb(0, 255, 21);
+        border: 2px solid rgb(0, 0, 255);
+        width: 300px;
+        height: 200px;
+    }
+    80%{
+        background-color: rgb(0, 247, 255);
+        border: 2px solid green;
+        width: 300px;
+        height: 200px;
+    }
+    100%{
+        background-color: rgb(0, 173, 23);
+        border: 2px solid rgb(255, 251, 0);
+        width: 300px;
+        height: 200px;
+    }
+}
+    

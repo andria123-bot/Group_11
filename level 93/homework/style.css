@@ -1,0 +1,74 @@
+/* General page styling */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Form container to align items horizontally */
+.form-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+input[type="text"] {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 250px;
+  box-sizing: border-box;
+  margin-right: 10px; /* Add margin between input and buttons */
+}
+
+button {
+  padding: 10px 15px;
+  font-size: 16px;
+  color: white;
+  background-color: #28a745;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-right: 10px; /* Add margin between buttons */
+}
+
+button:hover {
+  background-color: #218838;
+}
+
+/* Clear All button styling */
+#clear-all {
+  background-color: #dc3545;
+}
+
+#clear-all:hover {
+  background-color: #c82333;
+}
+
+/* List items styling */
+ul {
+  list-style-type: none;
+  padding: 0;
+  width: 300px;
+}
+
+ul li {
+  padding: 10px;
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 5px;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+ul li:hover {
+  background-color: #f8f9fa;
+  text-decoration: line-through;
+}

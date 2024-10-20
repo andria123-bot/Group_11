@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    class Rectangle{
+      // Setup
+      constructor(_width, _height, _color){
+        console.log('The rectangle is created!');
+
+        this.width = _width;
+        this.height = _height;
+        this.color = _color;
+      }
+
+      // მეთოდები
+      getArea(){
+        return this.width * this.height;
+      };
+      printDescription(){
+        console.log(`I am rectangle of ${this.width} x ${this.height} and i am ${this.color}`);
+      }
+    };
+    // ეს უცებ ქმნის propeties ქართულად არ ვიცი
+    let myRectangle1 = new Rectangle(5, 3, 'blue');
+    let myRectangle2 = new Rectangle(10, 5, 'red');
+
+    // console.log(myRectangle1.getArea()); // 15
+    // console.log(myRectangle2.getArea()); // 50
+    // console.log(myRectangle1.area); // Error: area is not defined
+    // console.log(myRectangle1.color); // blue
+    // console.log(myRectangle2.color); // red
+    myRectangle1.printDescription();
+    myRectangle2.printDescription();
+  </script>
+  
+</body>
+</html>

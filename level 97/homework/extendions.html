@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1>Hello</h1>
+  <script>
+    // Parent Class
+    class Person {
+      constructor(_name, _age) {
+        this.name = _name;
+        this.age = _age;
+      }
+
+      describe() {
+        console.log(`I am ${this.name} and I am ${this.age} years old`);
+      }
+    }
+
+    // Child Class (Programmer)
+    class Programmer extends Person {
+      constructor(_name, _age, _yearsOfExperience) {
+        super(_name, _age);
+        this.yearsOfExperience = _yearsOfExperience;
+      }
+
+      code() {
+        console.log(`${this.name} is coding`);
+      }
+    }
+
+    function developSoftware(programmers) {
+      for (let programmer of programmers) {
+        programmer.code();
+      }
+    }
+
+    const person1 = new Person("Jeff", 45);  // Corrected declaration
+    const programmer1 = new Programmer("Dom", 56, 12);  // Corrected declaration
+
+    const programmers = [
+      new Programmer('John Doe', 30, 5),
+      new Programmer('Jane Smith', 25, 3),
+      new Programmer('Michael Johnson', 45, 8)
+    ];
+
+    // Log person1 and programmer1
+    console.log(person1);
+    console.log(programmer1);
+    programmer1.describe(); // Test the describe method for programmer
+
+    // Call developSoftware
+    developSoftware(programmers);
+
+  </script>
+</body>
+</html>

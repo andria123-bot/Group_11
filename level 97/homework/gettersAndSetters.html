@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+  <script>
+    // Getters get
+    class Square {
+      constructor(_width) {
+        this.width = _width;
+        this.height = _width;
+        this.numOfRequestsForArea = 0;
+      }
+
+      get area() {
+        this.numOfRequestsForArea++;
+        return this.width * this.height;
+      }
+      // Setters set
+      set area(area){
+        this.width = Math.sqrt(area);
+        this.height = this.width;
+      }
+    }
+
+    let square1 = new Square(5);
+    square1.area = 25;
+    // console.log(square1.width);
+    // console.log(square1.height);
+    console.log(square1.area)
+    console.log(square1.area)
+    console.log(square1.area)
+    console.log(square1.area)
+
+    console.log(square1.numOfRequestsForArea);
+  </script>
+
+</body>
+</html>

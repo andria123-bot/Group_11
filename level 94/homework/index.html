@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Shopping Cart</h1>
+    <form id="item-form">
+        <input type="text" id="name" placeholder="Item Name" required>
+        <input type="number" id="price" placeholder="Item Price" required>
+        <input type="number" id="quantity" placeholder="Item Quantity" required>
+        <button type="submit">Add Item</button>
+    </form>
+    <div id="cart"></div>
+    <div id="total-price"></div>
+
+    <script src="shoppingCart.js"></script>
+</body>
+</html>

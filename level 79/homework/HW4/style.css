@@ -1,0 +1,21 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 50px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+select {
+  padding: 8px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+#selected-color {
+  font-size: 16px;
+  margin-top: 15px;
+  padding: 10px;
+  border: 1px solid #ddd;
+}

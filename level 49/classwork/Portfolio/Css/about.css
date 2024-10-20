@@ -1,0 +1,58 @@
+body{
+  margin: 0;
+  padding: 0;
+  background-image: linear-gradient(to right, #11256C , #308FC9);
+
+}
+
+/* General styles for the navbar */
+.navBar{
+  display: flex;
+  justify-content: center;
+  background-color: #348DC5;
+  align-items: center;
+  padding: 10px 0;
+  width: 100%;
+}
+
+.nav-links a:hover{
+  color: #3DE2FF;
+}
+
+/* Styles for the list of links */
+.nav-links{
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  
+}
+
+/* Styles for individual list items */
+.nav-links li{
+  margin: 0 25px;
+  
+}
+
+/* Styles for the links */
+.nav-links a{
+  text-decoration: none;
+  color: #574f4f;
+  font-weight: 500;
+  font-size: 20px;
+  color: white;
+}
+
+/* Ensure the parent container has a height */
+.parentContainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Center the .nameAge within its parent container */
+.nameAge{
+  display: flex;
+  justify-content: center;
+  color: white;
+}

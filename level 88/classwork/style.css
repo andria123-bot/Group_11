@@ -1,0 +1,14 @@
+*{
+  background-color: rgb(164, 255, 177);
+}
+
+#parent{
+  text-align: center;
+}
+
+button{
+  background-color: rgb(39, 39, 39);
+  color: white;
+  border-radius: 15px;
+  text-align: center;
+}
