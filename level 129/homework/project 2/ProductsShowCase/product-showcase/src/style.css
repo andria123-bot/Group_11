@@ -1,0 +1,56 @@
+/* Ensuring the body takes up the full height */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  height: 100vh;  /* Full viewport height */
+  display: flex;  /* Flexbox for centering */
+  justify-content: center;  /* Center horizontally */
+  align-items: center;  /* Center vertically */
+  background-color: #f4f4f9;
+}
+
+/* Centering the app content */
+.app {
+  text-align: center;
+  width: 100%;
+  max-width: 1200px;  /* Maximum width for the grid */
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+/* 3x2 Grid Layout (3 columns, 2 rows) */
+.product-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);  /* 3 equal-width columns */
+  grid-template-rows: repeat(2, auto);  /* 2 rows, height adjusts automatically */
+  gap: 20px;
+  width: 100%;  /* Ensure it takes full width */
+}
+
+.product-card {
+  border: 1px solid #ccc;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+
+.product-card h3 {
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+.product-card p {
+  margin: 8px 0;
+  font-size: 0.9rem;
+}
+
+.product-card strong {
+  font-size: 1.1rem;
+  color: #333;
+}
