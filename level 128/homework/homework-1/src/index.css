@@ -1,0 +1,96 @@
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  padding: 20px;
+}
+
+/* Header */
+header {
+  background-color: #3a3a3a;
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
+
+header h1 {
+  font-size: 28px;
+}
+
+/* Main content */
+main {
+  background-color: white;
+  padding: 20px;
+  border: 1px solid #ddd;
+  margin-top: 20px;
+  border-radius: 5px;
+}
+
+/* Section title */
+h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+/* Info Cards */
+.info-card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 15px;
+  margin-top: 20px;
+  border-radius: 5px;
+}
+
+.info-card h2 {
+  font-size: 20px;
+}
+
+/* Form */
+form {
+  margin-top: 20px;
+}
+
+form input, form button {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+form button {
+  background-color: #3a3a3a;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #555;
+}
+
+/* Footer */
+footer {
+  background-color: #3a3a3a;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: 30px;
+}
+
+/* Inline display for links */
+footer a {
+  color: white;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}

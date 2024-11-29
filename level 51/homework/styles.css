@@ -1,66 +1,49 @@
-/* საერთო სტილები */
+/* ძირითადი სტილები */
 body {
-  font-family: 'Arial', sans-serif;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
   margin: 0;
   padding: 0;
-  background-color: #f0f0f0;
 }
 
 header {
-  background-color: #333;
+  background-color: #4CAF50;
   color: white;
-  padding: 20px;
   text-align: center;
+  padding: 20px;
 }
 
-header h1 {
+h1 {
   margin: 0;
 }
 
-nav a {
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 10px;
+}
+
+nav ul li a {
   color: white;
-  margin: 0 15px;
   text-decoration: none;
 }
 
+main {
+  padding: 20px;
+}
+
+h2 {
+  color: #4CAF50;
+}
+
 footer {
-  text-align: center;
-  padding: 10px;
   background-color: #333;
   color: white;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-}
-
-/* მთავარი გვერდის სტილები */
-.hero {
-  background-color: #4CAF50;
-  color: white;
-  padding: 100px 20px;
   text-align: center;
-}
-
-.hero h2 {
-  font-size: 3rem;
-}
-
-.hero p {
-  font-size: 1.5rem;
-}
-
-/* "ჩვენ შესახებ" გვერდის სტილები */
-.about-section {
-  background-color: #ffeb3b;
-  color: #333;
-  padding: 50px 20px;
-  text-align: center;
-}
-
-.about-section h2 {
-  font-size: 2.5rem;
-}
-
-.about-section p {
-  font-size: 1.2rem;
+  padding: 10px;
 }
