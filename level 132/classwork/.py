@@ -1,1 +1,1 @@
-print("AI algorithms")
+print("I i've installed vite")

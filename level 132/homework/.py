@@ -1,0 +1,1 @@
+print("Only this was homework")
