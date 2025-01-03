@@ -1,0 +1,8 @@
+.container{
+  display: flex;
+  gap: 1700px;
+}
+
+.btn1{
+  height: 20px;
+}
