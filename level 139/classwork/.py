@@ -1,0 +1,1 @@
+print("Nothing devs anu araferi ar devs")
