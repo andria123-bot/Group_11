@@ -35,12 +35,7 @@ const Library = ({ updateBooks }) => {
   return (
     <div>
       <form onSubmit={handleSubmit}>
-        <input
-          type="text"
-          placeholder="Search for books"
-          value={query}
-          onChange={(e) => setQuery(e.target.value)}
-        />
+        <input type="text" placeholder="Search for books" value={query} onChange={(e) => setQuery(e.target.value)} />
         <button type="submit">Search</button>
       </form>
 
@@ -50,10 +45,7 @@ const Library = ({ updateBooks }) => {
             <h3>{book.volumeInfo.title}</h3>
             <p>Author: {book.volumeInfo.authors ? book.volumeInfo.authors.join(', ') : 'Unknown'}</p>
             <p>{book.volumeInfo.description}</p>
-            <img
-              src={book.volumeInfo.imageLinks?.thumbnail}
-              alt={book.volumeInfo.title}
-            />
+            <img src={book.volumeInfo.imageLinks?.thumbnail} />
             <button onClick={() => addToLibrary(book)}>Add to Library</button>
           </div>
         ))}
@@ -65,9 +57,7 @@ const Library = ({ updateBooks }) => {
           <div key={book.id}>
             <h3>{book.volumeInfo.title}</h3>
             <p>{book.read ? 'Read' : 'Unread'}</p>
-            <button onClick={() => toggleReadStatus(book.id)}>
-              Mark as {book.read ? 'Unread' : 'Read'}
-            </button>
+            <button onClick={() => toggleReadStatus(book.id)}>Mark as {book.read ? 'Unread' : 'Read'}</button>
           </div>
         ))}
       </div>
