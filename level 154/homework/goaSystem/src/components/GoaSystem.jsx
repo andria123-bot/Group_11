@@ -10,7 +10,7 @@ function GoaSystem() {
     localStorage.setItem("account", JSON.stringify(account));
     localStorage.setItem("accounts", JSON.stringify(accounts));
     localStorage.setItem("students", JSON.stringify(students));
-  }, [account, accounts, students]);
+  }, []);
 
   // Load accounts and account from localStorage on mount
   useEffect(() => {
