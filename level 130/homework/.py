@@ -1,1 +1,1 @@
-print("AI algorithms")
+print("No homework")
