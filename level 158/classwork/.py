@@ -1,1 +1,1 @@
-print("No HomeWork Practical Lesson")
+print("No Classwork Practical Lesson")
