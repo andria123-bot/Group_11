@@ -25,11 +25,7 @@ const App = () => {
     return (
       <div className="auth">
         <h1>{isLogin ? 'Login' : 'Register'}</h1>
-        <AuthForm
-          isLogin={isLogin}
-          onSubmit={handleAuthSubmit}
-          error={error}
-        />
+        <AuthForm isLogin={isLogin} onSubmit={handleAuthSubmit} error={error} />
         <button onClick={() => setIsLogin(!isLogin)}>
           {isLogin ? 'Switch to Register' : 'Switch to Login'}
         </button>

@@ -13,11 +13,7 @@ const ProductList = ({ products, onDeleteProduct }) => {
       </thead>
       <tbody>
         {products.map(product => (
-          <ProductItem
-            key={product.id}
-            product={product}
-            onDeleteProduct={onDeleteProduct}
-          />
+          <ProductItem key={product.id} product={product} onDeleteProduct={onDeleteProduct} />
         ))}
       </tbody>
     </table>

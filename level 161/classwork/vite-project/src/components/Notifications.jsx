@@ -15,18 +15,15 @@ const Notifications = ({ tasks }) => {
       }
     };
 
-    // Check for overdue tasks every minute
     const interval = setInterval(checkOverdueTasks, 60000);
 
-    // Initial check
     checkOverdueTasks();
 
-    // Cleanup interval on unmount
     return () => clearInterval(interval);
   }, [tasks]);
 
   if (notifications.length === 0) {
-    return null; // Don't render anything if there are no notifications
+    return null;
   }
 
   return (
