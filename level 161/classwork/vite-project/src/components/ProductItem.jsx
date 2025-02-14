@@ -1,3 +1,6 @@
+import React from 'react';
+import ProductItem from './ProductItem';
+
 const ProductList = ({ products, onDeleteProduct }) => {
   return (
     <table>
@@ -10,13 +13,11 @@ const ProductList = ({ products, onDeleteProduct }) => {
       </thead>
       <tbody>
         {products.map(product => (
-          <tr key={product.id}>
-            <td>{product.name}</td>
-            <td>${product.price}</td>
-            <td>
-              <button onClick={() => onDeleteProduct(product.id)}>Delete</button>
-            </td>
-          </tr>
+          <ProductItem
+            key={product.id}
+            product={product}
+            onDeleteProduct={onDeleteProduct}
+          />
         ))}
       </tbody>
     </table>

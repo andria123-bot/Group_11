@@ -1,22 +1,44 @@
-import { useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 
-const App = () => {
-  const [tasks, setTasks] = useState([]);
+const Notifications = ({ tasks }) => {
+  const [notifications, setNotifications] = useState([]);
 
   useEffect(() => {
-    const interval = setInterval(() => {
-      const overdueTasks = tasks.filter(task => new Date(task.dueDate) < new Date() && task.status !== 'completed');
+    const checkOverdueTasks = () => {
+      const overdueTasks = tasks.filter(
+        task => new Date(task.dueDate) < new Date() && task.status !== 'completed'
+      );
       if (overdueTasks.length > 0) {
-        alert('You have overdue tasks!');
+        setNotifications(overdueTasks.map(task => `Task "${task.title}" is overdue!`));
+      } else {
+        setNotifications([]);
       }
-    }, 60000);
+    };
+
+    // Check for overdue tasks every minute
+    const interval = setInterval(checkOverdueTasks, 60000);
+
+    // Initial check
+    checkOverdueTasks();
+
+    // Cleanup interval on unmount
     return () => clearInterval(interval);
   }, [tasks]);
 
+  if (notifications.length === 0) {
+    return null; // Don't render anything if there are no notifications
+  }
+
   return (
-    <div>
+    <div className="notifications">
+      <h3>Notifications</h3>
+      <ul>
+        {notifications.map((notification, index) => (
+          <li key={index}>{notification}</li>
+        ))}
+      </ul>
     </div>
   );
 };
 
-export default App;
+export default Notifications;

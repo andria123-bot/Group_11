@@ -1,65 +1,52 @@
-import React, { useState, useEffect } from 'react';
-import Dashboard from './components/Dashboard';
-import TaskForm from './components/TaskForm';
-import TaskList from './components/TaskList';
-import Notification from './components/Notifications';
+import React, { useState } from 'react';
+import useAuth from './hooks/useAuth';
+import useProducts from './hooks/useProducts';
+import AuthForm from './components/AuthForm';
+import ProductForm from './components/ProductForm';
+import ProductList from './components/ProductItem';
 
 const App = () => {
-  const [tasks, setTasks] = useState([]);
+  const { user, register, login, logout } = useAuth();
+  const { products, addProduct, deleteProduct } = useProducts();
+  const [isLogin, setIsLogin] = useState(true);
+  const [error, setError] = useState('');
 
-  useEffect(() => {
-    const savedTasks = JSON.parse(localStorage.getItem('tasks')) || [];
-    setTasks(savedTasks);
-  }, []);
-
-  useEffect(() => {
-    localStorage.setItem('tasks', JSON.stringify(tasks));
-  }, [tasks]);
-
-  const addTask = (newTask) => {
-    setTasks([...tasks, { ...newTask, id: Date.now(), status: 'pending' }]);
-  };
-
-  const updateTask = (updatedTask) => {
-    setTasks(tasks.map(task => (task.id === updatedTask.id ? updatedTask : task)));
-  };
-
-  const deleteTask = (taskId) => {
-    setTasks(tasks.filter(task => task.id !== taskId));
-  };
-
-  const toggleTaskStatus = (taskId) => {
-    setTasks(tasks.map(task =>
-      task.id === taskId
-        ? { ...task, status: task.status === 'completed' ? 'pending' : 'completed' }
-        : task
-    ));
-  };
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      const overdueTasks = tasks.filter(
-        task => new Date(task.dueDate) < new Date() && task.status !== 'completed'
-      );
-      if (overdueTasks.length > 0) {
-        alert(`You have ${overdueTasks.length} overdue task(s)!`);
+  const handleAuthSubmit = (username, password) => {
+    if (isLogin) {
+      if (!login(username, password)) {
+        setError('Invalid username or password.');
       }
-    }, 60000);
-    return () => clearInterval(interval);
-  }, [tasks]);
+    } else {
+      register(username, password);
+    }
+  };
+
+  if (!user) {
+    return (
+      <div className="auth">
+        <h1>{isLogin ? 'Login' : 'Register'}</h1>
+        <AuthForm
+          isLogin={isLogin}
+          onSubmit={handleAuthSubmit}
+          error={error}
+        />
+        <button onClick={() => setIsLogin(!isLogin)}>
+          {isLogin ? 'Switch to Register' : 'Switch to Login'}
+        </button>
+      </div>
+    );
+  }
 
   return (
-    <div className="app">
-      <h1>Task Management Dashboard</h1>
-      <Dashboard tasks={tasks} />
-      <TaskForm onAddTask={addTask} />
-      <TaskList
-        tasks={tasks}
-        onDelete={deleteTask}
-        onUpdate={updateTask}
-        onToggleStatus={toggleTaskStatus}
-      />
-      <Notification tasks={tasks} />
+    <div className="dashboard">
+      <h1>Welcome, {user.username}!</h1>
+      <button onClick={logout}>Logout</button>
+
+      <h2>Add Product</h2>
+      <ProductForm onAddProduct={addProduct} />
+
+      <h2>Products</h2>
+      <ProductList products={products} onDeleteProduct={deleteProduct} />
     </div>
   );
 };

@@ -1,23 +1,18 @@
-import { useState, useEffect } from 'react';
+import React from 'react';
 
-const DashBoard = ({ tasks }) => {
-  const [stats, setStats] = useState({ completed: 0, pending: 0, overdue: 0 });
-
-  useEffect(() => {
-    const completed = tasks.filter(task => task.status == 'completed').length;
-    const pending = tasks.filter(task => task.status === 'pending').length;
-    const overdue = tasks.filter(task => new Date(task.dueDate) < new Date() && task.status !== 'completed').length;
-    setStats({ completed, pending, overdue });
-  }, [tasks])
+const Dashboard = ({ tasks }) => {
+  const completed = tasks.filter(task => task.status === 'completed').length;
+  const pending = tasks.filter(task => task.status === 'pending').length;
+  const overdue = tasks.filter(task => new Date(task.dueDate) < new Date() && task.status !== 'completed').length;
 
   return (
-    <>
-      <h1>Dashboard</h1>
-      <h3>Completed: {status.completed}</h3>
-      <h3>Pending: {status.pending}</h3>
-      <h3>Overdue: {status.overdue}</h3>
-    </>
-  )
-}
+    <div className="dashboard">
+      <h2>Dashboard</h2>
+      <p>Completed: {completed}</p>
+      <p>Pending: {pending}</p>
+      <p>Overdue: {overdue}</p>
+    </div>
+  );
+};
 
-export default DashBoard
+export default Dashboard;
