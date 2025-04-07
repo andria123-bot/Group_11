@@ -1,0 +1,1 @@
+print("Amis yidvas ar vapireb :d :d. xelfass ro avigeb viyidi da avawyob :))")

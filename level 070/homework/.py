@@ -1,0 +1,1 @@
+print("Prezentacia iyo")
